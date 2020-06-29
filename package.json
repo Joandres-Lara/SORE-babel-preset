@@ -1,21 +1,21 @@
 {
   "name": "sore-babel-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel plugin of Sore Platform",
   "main": "index.js",
   "keywords": [
-   "babel"
+    "babel"
   ],
   "scripts": {
     "test": "jest"
   },
   "author": "",
   "repository": {
-   "type": "git",
-   "url": "git+https://github.com/Joandres-Lara/SORE-babel-preset"
+    "type": "git",
+    "url": "git+https://github.com/Joandres-Lara/SORE-babel-preset"
   },
   "bugs": {
-   "url": "https://github.com/Joandres-Lara/SORE-babel-preset/issues"
+    "url": "https://github.com/Joandres-Lara/SORE-babel-preset/issues"
   },
   "license": "ISC",
   "devDependencies": {
