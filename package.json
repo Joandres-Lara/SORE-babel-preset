@@ -1,6 +1,6 @@
 {
   "name": "sore-babel-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Babel plugin of Sore Platform",
   "main": "index.js",
   "keywords": [
@@ -18,7 +18,7 @@
     "url": "https://github.com/Joandres-Lara/SORE-babel-preset/issues"
   },
   "files": [
-   "src/"
+    "src/"
   ],
   "license": "ISC",
   "devDependencies": {
