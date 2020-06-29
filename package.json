@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/Joandres-Lara/SORE-babel-preset/issues"
   },
+  "files": [
+   "src/"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.7.7",
