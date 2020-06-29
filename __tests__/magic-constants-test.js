@@ -1,5 +1,5 @@
 const babel = require('@babel/core');
-const magicConstantsPlugin = require('../plugins/magic-constants');
+const magicConstantsPlugin = require('../src/plugins/magic-constants');
 
 const TEST_TRANSFORM_CODE = `
 console.log([__TEST__,__DEV__]);
