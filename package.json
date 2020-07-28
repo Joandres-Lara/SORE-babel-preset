@@ -1,6 +1,6 @@
 {
   "name": "sore-babel-preset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Babel plugin of Sore Platform",
   "main": "index.js",
   "keywords": [
