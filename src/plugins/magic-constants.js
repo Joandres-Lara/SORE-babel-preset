@@ -2,11 +2,14 @@
 
 const constants = require('./magic-constants/constants');
 const types = require('@babel/types')
-
+/**
+ * Cambia las constantes mágicas para el archivo.
+ *
+ * @return {object}
+ */
 module.exports = function magicConstants(){
-
  return {
-  name: 'magicConstants',
+  name: 'magic-constants',
   visitor: {
    Program: {
     exit(path){
@@ -21,5 +24,5 @@ module.exports = function magicConstants(){
     }
    }
   }
- };
+ }
 }
