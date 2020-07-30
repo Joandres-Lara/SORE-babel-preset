@@ -9,8 +9,12 @@ module.exports = function needDeclaration(path){
 
  function findedPromiseIdentifier(node){
 
+  if(node === undefined || node === null){
+   return false;
+  }
+
   if(types.isIdentifier(node)){
-   need = node.name == 'Promise' || node.id.name === 'Promise';
+   need = node.name == 'Promise';
    return need;
   }
 
