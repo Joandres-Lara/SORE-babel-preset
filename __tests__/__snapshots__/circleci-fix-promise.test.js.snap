@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Insert promise declaration Declare when is need 1`] = `
+"let Promise;
+
+try {
+  Promise = require(\\"Promise\\");
+} catch (e) {
+  console.warn(\\"Module native promise not found, try obtain of babel polyfill configuration\\");
+  Promise = require(\\"core-js-pure/features/promise\\");
+}
+
+module.exports = function fnWithoutPromiseDeclaration() {
+  if (promisedWithNew) {
+    return new Promise((resolve, reject) => {
+      return resolve(true);
+    });
+  }
+
+  if (promisedWithStaticCalled) {
+    return Promise.resolve(true);
+  }
+};"
+`;
+
+exports[`Insert promise declaration Ignore if not need 1`] = `
+"module.exports = function fnNotNeed() {
+  return false;
+};"
+`;
+
+exports[`Insert promise declaration Replace declaration 1`] = `
+"let Promise;
+
+try {
+  Promise = require(\\"Promise\\");
+} catch (e) {
+  console.warn(\\"Module native promise not found, try obtain of babel polyfill configuration\\");
+  Promise = require(\\"core-js-pure/features/promise\\");
+}
+
+const otherVar = false;
+
+module.exports = function promised() {
+  return new Promise(resolve => {
+    return resolve(true);
+  });
+};"
+`;
